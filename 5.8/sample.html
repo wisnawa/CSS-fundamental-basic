@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Descendant Selector</title>
+    <style>
+      /* Descendant selector adalah sebutan untuk selector yang mencari tag HTML berdasarkan struktur hubungan parent-child (parent-child relationship). */
+      div h2 {
+        color: red;
+      }
+      p em {
+        color: green;
+        font-size: 20px;
+        font-weight: bold;
+      }
+      body h1 {
+        color: blue;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Belajar From Zero to Hero</h1>
+    <p>tag paragraf dari HTML</p>
+    <div>
+      <h2>Header h2 di dalam tag div</h2>
+      <p><em>Sebuah paragraf</em> di dalam tag div</p>
+      <h2>Header h2 di dalam tag div</h2>
+    </div>
+  </body>
+</html>
