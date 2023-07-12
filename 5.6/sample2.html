@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Group Selector</title>
+    <style>
+      /* Group selector sebenarnya bukanlah ‘selector murni’, tapi hanya sebutan untuk cara menggabungkan beberapa selector ke dalam satu perintah. */
+      .judul-utama,
+      #headerKedua,
+      [title~="Zero"] {
+        color: green;
+        font-size: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1 class="judul-utama">Perhatikan contoh dibawah ini:</h1>
+    <p title="from Zero to Hero">
+      Group Selecter yang kita gunakan berikut ini.
+    </p>
+    <div>
+      <h2 id="headerKedua">Header h2 di dalam tag div</h2>
+    </div>
+  </body>
+</html>
