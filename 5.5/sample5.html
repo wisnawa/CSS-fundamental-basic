@@ -5,10 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Atribut Selector</title>
     <style>
-      /* cara mencari seluruh atribut title yang mengandung kata “kota”. */
-      /* Perhatikan tambahan karakter tilde “ ∼ “ sebelum tanda sama dengan. */
-      [title~="kota"] {
-        color: green;
+      /* cara mencari atribut title yang mengandung kata “ba”? Ini tidak bisa dilakukan dengan karakter tilde, karena tilde digunakan untuk mencari kata (yang dipisah dengan spasi). Untuk keperluan ini, kita bisa menggunakan karakter bintang “ * “ */
+      [title*="ba"] {
+        color: blue;
         font-weight: bold;
       }
     </style>
