@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Atribut Selector</title>
+    <style>
+      /* cara mencari seluruh atribut title yang mengandung kata “kota” */
+      [title~="kota"] {
+        color: green;
+        font-weight: bold;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>Attribute selector</h2>
+    <li>Kota Denpasar</li>
+    <li title="kota bandung">Kota Bandung</li>
+    <li title="surabaya">Kota Surabaya</li>
+    <li>
+      <a href="https://id.wikipedia.org/wiki/Kota_Medan" title="kota medan"
+        >Kota Medan</a
+      >
+    </li>
+    <li>
+      <a href="https://id.wikipedia.org/wiki/Daerah_Khusus_Ibukota_Jakarta"
+        >Kota Jakarta</a
+      >
+    </li>
+    <li><a href="makassar.pdf" title="kota makasar">Kota Makasar</a></li>
+  </body>
+</html>
