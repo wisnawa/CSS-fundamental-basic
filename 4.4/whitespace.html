@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      p {
+        font-size: 18px;
+        color: red;
+      }
+      p {
+        font-size: 18px;
+        color: red;
+      }
+      /* Contoh selector pertama akan mencari seluruh paragraf yang memiliki atribut class=pertama,sedangkan pada contoh kedua, akan mencari seluruh tag HTML yang mimiliki class=pertama dan berada di dalam sebuah paragraf */
+      p.satu {
+        font-size: 18px;
+        color: black;
+      }
+      p .satu {
+        font-size: 18px;
+        color: black;
+      }
+      /* Pengecualian adalah untuk value yang tidak membutuhkan nilai satuan, seperti nilai 0. */
+      p {
+        font-size: 18px;
+      }
+      p {
+        font-size: 18px;
+      }
+    </style>
+    <title>Whitespace</title>
+  </head>
+  <body>
+    <!-- Whitespace adalah istilah yang merujuk kepada karakter ’spasi’ yang tidak tampil di layar,contohnya seperti karakter spasi, tab, dan karakter enter (dikenal juga dengan karakter carriage returns). -->
+    <p>Lorem ipsum dolor sit amet.</p>
+    <p class="satu">Lorem, ipsum dolor sit amet consectetur adipisicing.</p>
+  </body>
+</html>
