@@ -5,19 +5,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Pseudo Element Selector</title>
     <style>
-      /* property content: attr(nama-atribut) */
       a::after {
-        content: attr(href);
+        content: "(" attr(href) ")";
+        color: green;
       }
     </style>
   </head>
   <body>
     <h2>Daftar Kota</h2>
     <ul>
-      <li><a href="padang.html">Kota Padang</a></li>
-      <li><a href="medan.html">Kota Medan</a></li>
-      <li><a href="jakarta.html">Kota Jakarta</a></li>
-      <li><a href="makassar.html">Kota Makassar</a></li>
+      <li><a href="padang.html">Kota Padang&nbsp;</a></li>
+      <li><a href="medan.html">Kota Medan&nbsp;</a></li>
+      <li><a href="jakarta.html">Kota Jakarta&nbsp;</a></li>
+      <li><a href="makassar.html">Kota Makassar&nbsp;</a></li>
     </ul>
   </body>
 </html>

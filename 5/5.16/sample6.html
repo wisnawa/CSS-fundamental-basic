@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pseudo Element Selector</title>
+    <style>
+      /* nilai property counter dan counter-increment untuk menghasilkan nomor urut dari sebuah element HTML */
+      h3::after {
+        content: "ke -" counter(nourut);
+      }
+      h3 {
+        counter-increment: nourut;
+      }
+    </style>
+  </head>
+  <body>
+    <h3>Judul&nbsp;</h3>
+    <h3>Judul&nbsp;</h3>
+    <h3>Judul&nbsp;</h3>
+    <h3>Judul&nbsp;</h3>
+    <h3>Judul&nbsp;</h3>
+  </body>
+</html>
