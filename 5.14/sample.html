@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>UI Element state Pseudo Class Selector</title>
+    <style>
+      /* UI element state pseudo class selector adalah jenis selector CSS yang digunakan untuk mencari element HTML berdasarkan kondisi dari element tersebut */
+      input:disabled {
+        border: solid red 2px;
+      }
+      input:enabled {
+        border: solid green 2px;
+      }
+      input:checked {
+        margin-left: 30px;
+      }
+    </style>
+  </head>
+  <body>
+    <form action="register.php" method="get">
+      <p>Nama:<input type="text" name="nama" disabled /></p>
+      <p>Umur:<input type="text" name="umur" /></p>
+      <p>Alamat:<input type="text" name="alamat" /></p>
+      <p><input type="checkbox" name="mahasiswa" />Mahasiswa</p>
+      <p><input type="checkbox" name="pelajar" />Pelajar</p>
+    </form>
+  </body>
+</html>
