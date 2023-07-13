@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Descendant Selector</title>
+    <style>
+      /* Selector diatas akan mengubah warna teks menjadi abu-abu untuk setiap tag HTML yang memiliki atribut class="keterangan" dan berada di dalam tag <p>. Jika terdapat tag HTML yang juga memiliki class="keterangan" tetapi tidak berada di dalam tag <p>, maka tidak akan dikenai oleh selector ini */
+      p {
+        color: red;
+      }
+      p .keterangan {
+        color: green;
+        font-size: 20px;
+      }
+      /* element spesific selector */
+      div.pesan {
+        color: brown;
+      }
+      /* element descendant selector */
+      div .pesan {
+        color: blue;
+        background-color: yellow;
+      }
+    </style>
+  </head>
+  <body>
+    <p>
+      Isi tag 'p' dengan color red
+      <span class="keterangan">
+        Isi class keterangan dengan color green dan font size 20px</span
+      >
+    </p>
+    <div class="pesan">
+      <h2>Isi tag div class pesan dengan color brown!</h2>
+    </div>
+    <div>
+      <p class="pesan">
+        Isi tag 'p' class 'pesan' dengan color blue dan background color yellow
+      </p>
+    </div>
+  </body>
+</html>
