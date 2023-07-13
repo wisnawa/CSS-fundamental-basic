@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Structural Pseudo Class Selector</title>
+    <style>
+      /* Pseudo Selector :nth-of-type() dan :nth-last-of-type() */
+      p:nth-child(3) {
+        color: red;
+      }
+      p:nth-child(5) {
+        color: red;
+      }
+      p:nth-of-type(7) {
+        color: blue;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <p>Paragraf Pertama</p>
+      <p>Paragraf Kedua</p>
+      <h2>Bukan Paragraf</h2>
+      <p>Paragraf Ketiga</p>
+      <p>Paragraf Keempat</p>
+      <p>Paragraf Kelima</p>
+      <h2>Bukan Paragraf</h2>
+      <p>Paragraf Keenam</p>
+      <p>Paragraf Ketujuh</p>
+      <p>Paragraf Kedelapan</p>
+      <p>Paragraf Kesembilan</p>
+      <h2>Bukan Paragraf</h2>
+      <p>Paragraf Kesepuluh</p>
+    </div>
+  </body>
+</html>
