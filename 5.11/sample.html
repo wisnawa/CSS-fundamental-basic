@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>General Sibling Selector</title>
+    <style>
+      /* General sibling selector sangat mirip dengan Adjacent selector. Bedanya, jika pada adjacent selector hanya cocok dengan 1 tag saja (yang menjadi siblingnya), general sibling selector akan cocok dengan seluruh sibling yang berada setelahnya. */
+      h2 ~ p {
+        color: green;
+        font-size: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>From zero to hero tuwiz</h1>
+    <div>
+      <h2>Header h2 di dalam tag div</h2>
+      <p>Sebuah paragraf di dalam div color green</p>
+      <p>Sebuah paragraf lain di dalam div color green</p>
+    </div>
+    <div>
+      <h2>Header h2 di dalam tag div</h2>
+      <p>Sebuah paragraf di dalam div</p>
+      <p>Sebuah paragraf lain di dalam div color green</p>
+    </div>
+    <h2>Header h2 di luar tag div</h2>
+    <p>Sebuah paragraf di luar div color green</p>
+  </body>
+</html>
