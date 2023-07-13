@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Structural Pseudo Class Selector</title>
+    <style>
+      /* Pseudo Selector :nth-child() dan :nth-last-child() */
+      ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+      }
+      li {
+        width: 150px;
+        height: 30px;
+        padding: 0 10px;
+        font-size: 18px;
+        margin-left: 50px;
+        line-height: 30px;
+      }
+      li:nth-child(odd) {
+        background-color: magenta;
+      }
+      li:nth-child(event) {
+        background-color: aqua;
+      }
+    </style>
+  </head>
+  <body>
+    <ul>
+      <li>List Pertama</li>
+      <li>List Kedua</li>
+      <li>List Ketiga</li>
+      <li>List Keempat</li>
+      <li>List Kelima</li>
+      <li>List Keenam</li>
+      <li>List Ketujuh</li>
+      <li>List Kedelapan</li>
+      <li>List Kesembilan</li>
+      <li>List Kesepuluh</li>
+      <li>List Kesebelas</li>
+      <li>List Keduabelas</li>
+      <li>List Ketigabelas</li>
+      <li>List Keempatbelas</li>
+      <li>List Kelimabelas</li>
+    </ul>
+  </body>
+</html>
