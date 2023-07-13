@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Adjacent Selector</title>
+    <style>
+      /* Adjacent selector masih berhubungan dengan struktur DOM, kali ini yang akan disinggung adalah sibling relationship (hubungan saudara). */
+      h2 + p {
+        color: green;
+        font-size: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>From zero to hero tuwiz</h1>
+    <div>
+      <h2>Header h2 di dalam tag div</h2>
+      <p>Sebuah paragraf di dalam div</p>
+      <p>Sebuah paragraf lain di dalam div</p>
+    </div>
+    <div>
+      <h2>Header h2 di dalam tag div</h2>
+      <p>Sebuah paragraf di dalam div</p>
+      <p>Sebuah paragraf lain di dalam div</p>
+    </div>
+    <h2>Header h2 di luar tag div</h2>
+    <p>Sebuah paragraf di luar div</p>
+  </body>
+</html>
