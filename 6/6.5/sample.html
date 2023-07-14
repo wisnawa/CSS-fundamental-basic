@@ -11,8 +11,7 @@
         <head>
           <h2>6.5 Merencanakan Kode CSS</h2>
         </head>
-        <p>Dengan pengetahuan tentang <em>cascade, inheritance,</em> dan <em>spesificity</em>, kita sudah memiliki dasar yang cukup untuk merencanakan kode CSS. Berikut adalah beberapa tips untuk membuat kode CSS yang efisien:
-        </p>
+        <p>Dengan pengetahuan tentang <em>cascade, inheritance,</em> dan <em>spesificity</em>, kita sudah memiliki dasar yang cukup untuk merencanakan kode CSS. Berikut adalah beberapa tips untuk membuat kode CSS yang efisien:</p>
       </article>
     </section>
     <section>
@@ -20,13 +19,7 @@
         <head>
           <h1>Hindari penggunaan <em>inline style</em> sama sekali</h1>
         </head>
-        <p>Hampir tidak ada alasan yang bagus untuk menggunakan <em>inline style.</em>
-          Selain memiliki tingkat prioritas yang tinggi (yang membuatnya susah
-          di ‘timpa’), <em>inline style</em> juga sangat susah di deteksi. Belum
-          lagi jika website kita sudah besar dan terdiri dari ribuan halaman,
-          mengubah style yang ada di setiap halaman merupakan sebuah mimpi
-          buruk.
-        </p>
+        <p>Hampir tidak ada alasan yang bagus untuk menggunakan <em>inline style.</em> Selain memiliki tingkat prioritas yang tinggi (yang membuatnya susah di ‘timpa’), <em>inline style</em> juga sangat susah di deteksi. Belum lagi jika website kita sudah besar dan terdiri dari ribuan halaman, mengubah style yang ada di setiap halaman merupakan sebuah mimpi buruk.</p>
       </article>
     </section>
     <section>
@@ -36,23 +29,14 @@
             Jika memungkinkan, kurangi penggunaan internal / embedded style
           </h1>
         </head>
-        <p>
-          Walaupun masih bisa ditoleransi, pengunaan
-          <em>internal style/embedded style</em> juga bisa menjadi masalah
-          tersendiri. Karena berada di ‘level’ halaman, kode CSS ini juga akan
-          susah di kelola. Kita harus ingat halaman mana saja yang memiliki
-          <em>internal style.</em>
-        </p>
+        <p>Walaupun masih bisa ditoleransi, pengunaan <em>internal style/embedded style</em> juga bisa menjadi masalah tersendiri. Karena berada di ‘level’ halaman, kode CSS ini juga akan susah di kelola. Kita harus ingat halaman mana saja yang memiliki <em>internal style.</em></p>
       </article>
     </section>
     <section>
       <article>
         <head>
           <h1>Pertimbangkan jika ingin menggunakan ID Selector</h1>
-          <p>
-            Sama seperti <em>inline style, ID selector</em> juga memiliki
-            tingkat prioritas yang tinggi, yang membuatnya susah untuk ditimpa.
-          </p>
+          <p>Sama seperti <em>inline style, ID selector</em> juga memiliki tingkat prioritas yang tinggi, yang membuatnya susah untuk ditimpa.</p>
         </head>
       </article>
     </section>
@@ -61,13 +45,7 @@
         <head>
           <h1>Batasi penggunakan group selector maksimal 3 level</h1>
         </head>
-        <p>
-          Apabila anda mendapati penulisan selector seperti body p+h2
-          #paragrafPertama, pertimbangkan untuk mencari cara lain. Selector yang
-          panjang seperti ini sangat tidak efisien dan menambah kompleks kode
-          CSS. Jika memungkinkan, batasi penggunakan selector hanya 3 atau 2
-          level saja.
-        </p>
+        <p>Apabila anda mendapati penulisan selector seperti body p+h2 #paragrafPertama, pertimbangkan untuk mencari cara lain. Selector yang panjang seperti ini sangat tidak efisien dan menambah kompleks kode CSS. Jika memungkinkan, batasi penggunakan selector hanya 3 atau 2 level saja.</p>
       </article>
     </section>
     <section>
@@ -75,7 +53,7 @@
         <head>
           <h1>Manfaatkan fitur inhritance</h1>
         </head>
-        <p>Jika anda membuat skturtur HTML yang baik, anda bisa membuat style global pada <em></em>parent element seperti ukuran font dan warna teks yang ditempatkan pada selector global seperti “body”. Dengan demikian, setiap child element dari tag <body> akan menurunkan ukuran font dan warna teks yang sama. Apabila pada child element kita butuh mengubah ukuran font, tinggal menimpa efek ini dengan memanfaatkan inheritance.</p>
+        <p>Jika anda membuat skturtur HTML yang baik, anda bisa membuat style global pada <em>parent element</em> seperti ukuran font dan warna teks yang ditempatkan pada selector global seperti <strong>“body”</strong>. Dengan demikian, setiap child element dari tag <body> akan menurunkan ukuran font dan warna teks yang sama. Apabila pada child element kita butuh mengubah ukuran font, tinggal menimpa efek ini dengan memanfaatkan inheritance.</p>
       </article>
     </section>
   </body>
