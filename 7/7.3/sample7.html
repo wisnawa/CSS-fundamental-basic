@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Satuan length CSS</title>
+    <style>
+      /* Rem merupakan singkatan dari ‘root em’. Berbeda dengan satuan em yang tergantung kepada parent element, rem bergantung kepada ‘root element’, atau element akar */
+      html {
+        font-size: 20px;
+      }
+      body {
+        font-size: 16px;
+      }
+      div {
+        font-size: 90%;
+      }
+      p {
+        font-size: 1rem;
+      }
+    </style>
+  </head>
+  <body>
+    Teks di dalam &lt;body&gt;
+    <div>
+      Teks di dalam &lt;body&gt;&lt;div&gt;
+      <p>Teks di dalam &lt;body&gt;&lt;div&gt;paragraf</p>
+    </div>
+    <p>Teks di dalam &lt;body&gt;paragraf</p>
+  </body>
+</html>
