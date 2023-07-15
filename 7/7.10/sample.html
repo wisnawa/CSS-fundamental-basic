@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Property text-transform</title>
+    <style>
+      /* Agar tampilan web tetap seragam, kita perlu mengatur penggunaan huruf besar/kecil pada bagian konten ini. */
+      .satu {
+        text-transform: capitalize;
+      }
+      .dua {
+        text-transform: uppercase;
+      }
+      .tiga {
+        text-transform: lowercase;
+      }
+      .empat {
+        text-transform: none;
+      }
+    </style>
+  </head>
+  <body>
+    <p class="satu">paragraf dengan text-transform: capitalize</p>
+    <p class="satu">PARAGRAF DENGAN TEXT-TRANSFORM: CAPITALIZE</p>
+    <p class="dua">PARAGRAF DENGAN text-transform: uppercase</p>
+    <p class="tiga">PARAGRAF DENGAN text-transform: lowercase</p>
+    <p class="empat">paragraf dengan text-transform: none</p>
+  </body>
+</html>
