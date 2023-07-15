@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Property font-style</title>
+    <style>
+      /* property font-style hanya digunakan untuk memiringkan text (italic) */
+      p {
+        font-family: Georgia, "Times New Roman", Times, serif;
+        font-size: 25px;
+      }
+      .italic {
+        font-style: italic;
+      }
+      .oblique {
+        font-style: oblique;
+      }
+      .normal {
+        font-style: normal;
+      }
+    </style>
+  </head>
+  <body>
+    <p>Paragraf normal tanpa property font-style.</p>
+    <p class="italic">Paragraf ini menggunakan property font-style: italic</p>
+    <p class="oblique">Paragraf ini menggunakan property font-style: oblique</p>
+    <p>
+      <i
+        >Paragraf in berbeda di dalam tag i, dan secara default tempil italic</i
+      >
+    </p>
+    <p>
+      <i class="normal"
+        >Paragraf ini berada di dalam tag i, namun di 'normalkan'</i
+      >
+    </p>
+  </body>
+</html>

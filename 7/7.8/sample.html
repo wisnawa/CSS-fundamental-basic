@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Property text-decoration</title>
+    <style>
+      /* property text-decoration untuk membuat ‘dekorasi’ teks seperti garis bawah, garis atas dan garis tercoret. */
+      p {
+        font-size: 25px;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      .satu {
+        text-decoration: underline;
+        text-decoration-color: red;
+      }
+      .dua {
+        text-decoration: overline;
+        text-decoration-color: red;
+      }
+      .tiga {
+        text-decoration: line-through;
+        text-decoration-color: red;
+      }
+      .empat {
+        text-decoration: underline overline;
+        text-decoration-color: red;
+      }
+      .lima {
+        text-decoration: line-through underline overline;
+        text-decoration-color: red;
+      }
+      .enam {
+        text-decoration: none;
+        text-decoration-color: red;
+      }
+    </style>
+  </head>
+  <body>
+    <p class="satu">Paragraf dengan text-decoration: underline</p>
+    <p class="dua">Paragraf dengan text-decoration: overline</p>
+    <p class="tiga">Paragraf dengan text-decoration: line-throught</p>
+    <p class="empat">Paragraf dengan text-decoration: underline overline</p>
+    <p class="lima">
+      Paragraf dengan text-decoration: line-throught underline overline
+    </p>
+    <p class="enam">Paragraf dengan text-decoration: none</p>
+  </body>
+</html>
