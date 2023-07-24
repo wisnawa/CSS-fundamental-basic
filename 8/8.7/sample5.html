@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Property Margin</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      body {
+        background: url(pixels-grid.png);
+      }
+      div {
+        width: 500px;
+        height: 40px;
+        background-color: pink;
+        text-align: center;
+      }
+      .satu {
+        margin: 20px 0;
+      }
+      .dua {
+        margin: 80px 0;
+      }
+      .tiga {
+        margin: 60px 0;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="satu">Satu</div>
+    <div class="dua">
+      <div class="tiga">Nested Element</div>
+    </div>
+  </body>
+</html>
