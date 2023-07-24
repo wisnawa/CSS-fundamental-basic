@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Property Margin</title>
+    <style>
+      /* Margin merupakan ‘spasi’ atau ‘ruang kosong’ yang berada di sisi paling luar sebuah element. */
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      body {
+        background: url(pixels-grid.png);
+      }
+      div {
+        width: 100px;
+        height: 100px;
+        background-color: pink;
+        text-align: center;
+      }
+      .satu {
+        margin-top: 20px;
+        margin-left: 40px;
+        margin-bottom: 20px;
+      }
+      .dua {
+        margin: 0 0 60px 80px;
+      }
+      .tiga {
+        margin: 0 100px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="satu">Satu</div>
+    <div class="dua">Dua</div>
+    <div class="tiga">Tiga</div>
+  </body>
+</html>
