@@ -5,8 +5,57 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Content Width & Element Width</title>
     <style>
-      /*  */
+      /* perbedaan antara lebar konten (content width) dengan lebar element (element width) */
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      body {
+        background: url(pixels-grid.png);
+      }
+      div {
+        background-color: greenyellow;
+        text-align: center;
+      }
+      p {
+        background-color: yellow;
+      }
+      div.satu {
+        width: 200px;
+        height: 60px;
+      }
+      div.dua {
+        width: 200px;
+        height: 60px;
+        padding: 10px;
+      }
+      div.tiga {
+        width: 200px;
+        height: 60px;
+        padding: 10px;
+        border: 10px solid black;
+      }
+      div.empat {
+        width: 200px;
+        height: 60px;
+        padding: 10px;
+        border: 10px solid black;
+        margin: 10px;
+      }
     </style>
   </head>
-  <body></body>
+  <body>
+    <div class="satu">
+      <p>Box Pertama</p>
+    </div>
+    <div class="dua">
+      <p>Box Kedua</p>
+    </div>
+    <div class="tiga">
+      <p>Box Ketiga</p>
+    </div>
+    <div class="empat">
+      <p>Box Keempat</p>
+    </div>
+  </body>
 </html>
