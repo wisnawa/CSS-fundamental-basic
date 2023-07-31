@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Property background-size</title>
+    <style>
+      div {
+        width: 500px;
+        height: 200px;
+        margin: 10px;
+        border: 2px solid black;
+        color: white;
+        font-size: 25px;
+        background-image: url(gambar/strawberries.jpg);
+        background-repeat: no-repeat;
+        float: left;
+      }
+      .satu {
+        background-size: contain;
+      }
+      .dua {
+        background-size: cover;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="satu">Background-size: contain</div>
+    <div class="dua">Background-size: cover</div>
+  </body>
+</html>
