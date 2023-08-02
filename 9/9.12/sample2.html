@@ -3,15 +3,16 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Property background (shorthand notatio)</title>
+    <title>Property background (shorthand notation)</title>
     <style>
       div {
         width: 960px;
         height: 500px;
         border: 2px solid black;
         margin: 0 auto;
-        background: url(gambar/strawberries.jpg) bottom right / 700px 400px
-          no-repeat scroll padding-box content-box red;
+        background-color: red; /*ini akan ketimpa warna merah tidak akan nampak*/
+        background: url(gambar/strawberries.jpg) top right / 700px 400px
+          no-repeat; /*background-color default transparant*/
       }
     </style>
   </head>
