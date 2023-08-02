@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Property background-origin dan background-clip</title>
+    <style>
+      div {
+        width: 230px;
+        height: 130px;
+        text-align: center;
+        float: left;
+        color: black;
+        font-size: 25px;
+        border: 10px dashed green;
+        padding: 10px;
+        margin: 10px;
+        background-color: yellow;
+      }
+      .satu {
+        background-origin: border-box;
+      }
+      .dua {
+        background-origin: padding-box;
+      }
+      .tiga {
+        background-origin: content-box;
+      }
+      .empat {
+        background-clip: border-box;
+      }
+      .lima {
+        background-clip: padding-box;
+      }
+      .enam {
+        background-clip: content-box;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+        <p>Box 1<br>Default web broser</br></p>
+    </div>
+    <div class="satu">
+        <p>Box 2<br> background-origin: border-box</br></p>
+    </div>
+    <div class="dua">
+        <p>Box 3<br> background-origin: padding-box</br></p>
+    </div>
+    <div class="tiga">
+        <p>Box 4<br> background-origin: content-box</br></p>
+    </div>
+    <div class="">
+        <p>Box 5<br>default web browser</br></p>
+    </div>
+    <div class="empat">
+        <p>Box 6<br> background-clip: border-box</br></p>
+    </div>
+    <div class="lima">
+        <p>Box 7<br> background-clip: padding-box</br></p>
+    </div>
+    <div class="enam">
+        <p>Box 8<br> background-clip: content-box</br></p>
+    </div>
+  </body>
+</html>
