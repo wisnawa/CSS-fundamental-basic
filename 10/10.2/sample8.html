@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Property position</title>
+    <style>
+      .outer-container {
+        width: 700px;
+        height: 500px;
+        background-color: rgb(90, 232, 200);
+        margin: 0 auto;
+        position: relative;
+      }
+      .inner-container {
+        width: 500px;
+        height: 400px;
+        background-color: rgb(231, 232, 226);
+        margin: 0 auto;
+      }
+      .satu,
+      .dua,
+      .tiga {
+        width: 150px;
+        height: 150px;
+        font-size: 25px;
+        text-align: center;
+        color: white;
+      }
+      .satu {
+        background-color: #ff1a00;
+        position: absolute;
+        left: 30px;
+        top: 30px;
+      }
+      .dua {
+        background-color: #008c00;
+      }
+      .tiga {
+        background-color: #4096ee;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="outer-container">
+      <div class="inner-container">
+        <div class="satu">Box 1</div>
+      </div>
+    </div>
+  </body>
+</html>
