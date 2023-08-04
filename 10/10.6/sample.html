@@ -3,32 +3,32 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Property float</title>
+    <title>Mengatasi Efek container collapse</title>
     <style>
+      /* class selector container akan memiliki property float left agar warna background color muncul kembali. */
       .container {
         width: 700px;
         background-color: rgb(231, 232, 226);
         margin: 0 auto;
+        float: left;
       }
       .satu,
       .dua,
       .tiga {
         width: 150px;
         height: 150px;
-        font-size: 20px;
-        text-align: center;
-        line-height: 20px;
       }
       .satu {
         background-color: #ff1a00;
-        /* float right akan saya pindah ke kanan senggia box kedua hijau akan terlihat */
         float: right;
       }
       .dua {
         background-color: #008c00;
+        float: right;
       }
       .tiga {
         background-color: #4096ee;
+        float: right;
       }
     </style>
   </head>
