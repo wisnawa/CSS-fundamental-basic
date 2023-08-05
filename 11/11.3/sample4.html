@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Linear Gradient Length</title>
+    <style>
+      div {
+        width: 500px;
+        height: 250px;
+        margin: 0 auto;
+        border: 2px solid black;
+        float: left;
+        margin: 20px;
+        font-size: 30px;
+        text-align: center;
+      }
+      .satu {
+        background-image: linear-gradient(red 25%, white 30%, red 40%, white);
+      }
+      .dua {
+        background-image: linear-gradient(red 30px, white 60px, red, white);
+      }
+      .tiga {
+        background-image: linear-gradient(blue, white 15%, yellow);
+      }
+      .empat {
+        background-image: linear-gradient(
+          red 20%,
+          orange 40%,
+          yellow 60%,
+          green 80%,
+          blue,
+          indigo,
+          violet
+        );
+      }
+    </style>
+  </head>
+  <body>
+    <div class="satu">Box 1</div>
+    <div class="dua">Box 2</div>
+    <div class="tiga">Box 3</div>
+    <div class="empat">Box 4</div>
+  </body>
+</html>

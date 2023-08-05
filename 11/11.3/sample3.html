@@ -4,7 +4,18 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Linear Gradient Length</title>
-    <style></style>
+    <style>
+      div {
+        width: 960px;
+        height: 600px;
+        margin: 0 auto;
+        border: 2px solid black;
+        /* Nilai 75% ini artinya: warna merah akan ditampilkan hingga posisi 75% dari tinggi element, baru kemudian berganti menjadi warna putih hingga penuh 100%. */
+        background-image: linear-gradient(red 75%, white);
+      }
+    </style>
   </head>
-  <body></body>
+  <body>
+    <div></div>
+  </body>
 </html>
