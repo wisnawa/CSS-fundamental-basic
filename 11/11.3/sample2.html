@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Linear Gradient Color stop</title>
+    <style>
+      /* color stop lebih dari dua warna */
+      div {
+        width: 500px;
+        height: 250px;
+        margin: 0 auto;
+        border: 2px solid black;
+        float: left;
+        margin: 20px;
+        font-size: 30px;
+        text-align: center;
+      }
+      .satu {
+        background-image: linear-gradient(red, white, red);
+      }
+      .dua {
+        background-image: linear-gradient(green, blue, white);
+      }
+      .tiga {
+        background-image: linear-gradient(red, white, red, white, red);
+      }
+      .empat {
+        background-image: linear-gradient(
+          red,
+          orange,
+          yellow,
+          green,
+          blue,
+          indigo,
+          violet
+        );
+      }
+    </style>
+  </head>
+  <body>
+    <div class="satu">Box 1</div>
+    <div class="dua">Box 2</div>
+    <div class="tiga">Box 3</div>
+    <div class="empat">Box 4</div>
+  </body>
+</html>
