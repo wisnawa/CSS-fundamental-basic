@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Linear Gradient Length</title>
+    <title>Linear Gradient Direction</title>
     <style>
       div {
         width: 500px;
@@ -15,22 +15,23 @@
         font-size: 30px;
         text-align: center;
       }
-      /* satuan lenght pixel dan persen % */
+      /* gradient direction ditampilkan dari arah atas ke bawah */
       .satu {
-        background-image: linear-gradient(red 25%, white 30%, red 40%, white);
+        background-image: linear-gradient(to top, blue, white);
       }
       .dua {
-        background-image: linear-gradient(red 30px, white 60px, red, white);
+        background-image: linear-gradient(to bottom right, blue, white);
       }
       .tiga {
-        background-image: linear-gradient(blue, white 15%, yellow);
+        background-image: linear-gradient(to top right, blue, white, yellow);
       }
       .empat {
         background-image: linear-gradient(
-          red 20%,
-          orange 40%,
-          yellow 60%,
-          green 80%,
+          to right,
+          red,
+          orange,
+          yellow,
+          green,
           blue,
           indigo,
           violet

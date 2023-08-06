@@ -3,8 +3,9 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Linear Gradient Length</title>
+    <title>Linear Gradient</title>
     <style>
+      /* repeating linear gradient */
       div {
         width: 500px;
         height: 250px;
@@ -15,25 +16,30 @@
         font-size: 30px;
         text-align: center;
       }
-      /* satuan lenght pixel dan persen % */
       .satu {
-        background-image: linear-gradient(red 25%, white 30%, red 40%, white);
+        background-image: repeating-linear-gradient(to right, blue, white 10%);
       }
       .dua {
-        background-image: linear-gradient(red 30px, white 60px, red, white);
+        background-image: repeating-linear-gradient(
+          to bottom right,
+          blue,
+          white,
+          blue 10px
+        );
       }
       .tiga {
-        background-image: linear-gradient(blue, white 15%, yellow);
+        background-image: repeating-linear-gradient(45deg, green, white 1%);
       }
       .empat {
-        background-image: linear-gradient(
-          red 20%,
-          orange 40%,
-          yellow 60%,
-          green 80%,
+        background-image: repeating-linear-gradient(
+          to right,
+          red,
+          orange,
+          yellow,
+          green,
           blue,
           indigo,
-          violet
+          violet 10%
         );
       }
     </style>
