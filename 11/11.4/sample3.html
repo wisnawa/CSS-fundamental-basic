@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Radial Gradient Position</title>
+    <style>
+      /* default titik lingkaran gradient berada tepat ditengah element, kita bisa mengatur posisi titik ini dengan menggunakan satuan length */
+      div {
+        width: 500px;
+        height: 250px;
+        margin: 0 auto;
+        border: 2px solid black;
+        float: left;
+        margin: 20px;
+        font-size: 30px;
+        text-align: center;
+      }
+      .satu {
+        background-image: radial-gradient(circle at 100%, green, yellow);
+      }
+      .dua {
+        background-image: radial-gradient(ellipse at 100%, green, yellow);
+      }
+      .tiga {
+        background-image: radial-gradient(circle at 100px, green, yellow);
+      }
+      .empat {
+        background-image: radial-gradient(circle at top right, green, yellow);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="satu">circle at 100%</div>
+    <div class="dua">ellipse at 100% 50%</div>
+    <div class="tiga">circle at 100px 100px</div>
+    <div class="empat">circle at top right</div>
+  </body>
+</html>
