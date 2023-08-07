@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Property column-span</title>
+    <style>
+      /* digunakan untuk keluar dari efek kolom */
+      html {
+        padding: 0;
+        margin: 0;
+      }
+      body {
+        width: 960px;
+        margin: 30px auto;
+        font-family: Georgia, "Times New Roman", Times, serif;
+      }
+      .content {
+        column-count: 3;
+      }
+      .span {
+        /* none adalah nilai default column-span artinya tidak ada span sama sekali */
+        column-span: none;
+        background-color: aqua;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="content">
+      <p>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempore,
+        necessitatibus. Autem adipisci excepturi odio quisquam quod cum sed
+        aliquid quas, quibusdam optio, ipsa perspiciatis tenetur ea dolore.
+        Tempora consequuntur a necessitatibus cum ipsa natus distinctio iure
+        molestiae, eaque ullam eius quidem voluptate magnam quasi, repellat
+        molestias esse pariatur earum numquam!
+      </p>
+      <p>
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perferendis
+        accusamus eveniet dolorum tempore qui, exercitationem incidunt
+        aspernatur saepe optio dolores quod asperiores porro ab, quasi id ut
+        dicta excepturi harum recusandae. Asperiores nisi amet necessitatibus
+        perspiciatis accusamus eum libero error?
+      </p>
+      <h2 class="span">CSS Multiple column-span</h2>
+      <p>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Asperiores
+        officiis laudantium quia deserunt, aut necessitatibus repudiandae ut
+        delectus accusamus neque quaerat, beatae excepturi dolorum officia,
+        consequatur voluptas illo. Numquam nihil aut iure suscipit nobis magni
+        natus a corrupti sequi recusandae.
+      </p>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Property column-span</title>
+    <style>
+      html {
+        padding: 0;
+        margin: 0;
+      }
+      body {
+        width: 960px;
+        margin: 30px auto;
+        font-family: Georgia, "Times New Roman", Times, serif;
+      }
+      .content {
+        column-count: 3;
+      }
+      .span {
+        /* digunakan untuk keluar dari efek kolom */
+        column-span: all;
+        background-color: aqua;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="content">
+      <p>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Similique
+        officiis aliquam laboriosam, beatae labore nam accusantium repellendus
+        excepturi vitae nulla! Sequi quis neque, quo laboriosam autem
+        architecto. Aut exercitationem quasi recusandae quae animi?
+        Necessitatibus deleniti totam fuga! Quia autem delectus consequuntur non
+        dicta minima dolorum, laboriosam id. Nobis, ea ipsa!
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem eius
+        obcaecati reiciendis ipsa ab aliquam asperiores, repellendus adipisci
+        delectus corrupti laboriosam quisquam tenetur soluta illo dolor.
+        Molestias, accusantium, minima quod tempore repudiandae, cupiditate
+        pariatur aliquam praesentium debitis alias assumenda dolor.
+      </p>
+      <!-- terlihat judul header melebar (span) hingga keseluruh kolom -->
+      <h2 class="span">CSS Multiple column-span</h2>
+      <p>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptates
+        enim saepe veritatis corporis iusto atque adipisci voluptatem earum
+        dolore debitis! Iusto ab error, nobis perspiciatis corrupti dolorum
+        voluptatem aliquam earum nemo autem blanditiis officiis possimus quasi
+        voluptatum nihil aliquid accusantium.
+      </p>
+    </div>
+  </body>
+</html>
