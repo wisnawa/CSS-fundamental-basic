@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Repeating Radial Gradient</title>
+    <style>
+      /* ini digunakan untuk mengulangi warna gradient. */
+      div {
+        width: 500px;
+        height: 250px;
+        margin: 0 auto;
+        border: 2px solid black;
+        float: left;
+        margin: 20px;
+        font-size: 30px;
+        text-align: center;
+      }
+      .satu {
+        background-image: repeating-radial-gradient(circle, black, yellow 20%);
+      }
+      .dua {
+        background-image: repeating-radial-gradient(
+          circle farthest-corner at right top,
+          black,
+          yellow 10%,
+          black 15%
+        );
+      }
+      .tiga {
+        background-image: repeating-radial-gradient(
+          circle farthest-corner at left,
+          yellow,
+          yellow 10%,
+          black 15%
+        );
+      }
+      .empat {
+        background-image: repeating-radial-gradient(
+          circle farthest-corner,
+          yellow,
+          black 10px,
+          yellow 2px
+        );
+      }
+    </style>
+  </head>
+  <body>
+    <div class="satu">Box 1</div>
+    <div class="dua">Box 2</div>
+    <div class="tiga">Box 3</div>
+    <div class="empat">Box 4</div>
+  </body>
+</html>

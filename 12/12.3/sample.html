@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Property column-fill</title>
+    <style>
+      /* kegunaannya untuk mengatur efek */
+      html {
+        padding: 0;
+        margin: 0;
+      }
+      body {
+        width: 960px;
+        margin: 0 auto;
+        font-family: Georgia, "Times New Roman", Times, serif;
+      }
+      .content {
+        height: 400px;
+        column-width: 200px;
+        /* property column-fill auto akan memaksa web browser untuk mengisi kolom pertama terlebih dahulu, baru kemudian pindah ke kolom berikutnya apabila sudah mencapai tinggi maksimal. */
+        column-fill: auto;
+      }
+    </style>
+  </head>
+  <body>
+    <h3>CSS3 Multiple Column fill</h3>
+    <div class="content">
+      <p>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Animi sit
+        rerum quia omnis perspiciatis id sunt, voluptates cupiditate ipsum modi
+        illo velit quos! Illo odio sed aliquid sit, nemo minus natus. Quia,
+        impedit blanditiis minima maxime quidem illum magni architecto
+        perspiciatis non iusto est, omnis veniam aperiam autem consectetur
+        aliquid!
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium
+        consequuntur placeat repudiandae quae, blanditiis veritatis est dolor?
+        Porro ea omnis veniam possimus quaerat voluptate! Doloribus nihil fugit
+        eius explicabo natus!
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt error
+        inventore corporis voluptatibus totam perspiciatis quod magnam nam?
+        Facilis accusamus tempore fugiat inventore, culpa deserunt dicta facere
+        quis aspernatur eum molestiae accusantium reiciendis sequi minus
+        voluptatum impedit. Doloremque, magni ex? Lorem ipsum dolor sit, amet
+        consectetur adipisicing elit. Doloribus magni nobis culpa? Aliquam
+        provident optio voluptas reprehenderit vel, quia numquam fugit
+        repudiandae ea enim, voluptatibus assumenda illum consequatur eius eaque
+        aperiam, cum totam voluptatum? Harum animi aliquid nesciunt eveniet
+        dolor ducimus id delectus adipisci quod, rerum tempora error tenetur
+        expedita!
+      </p>
+    </div>
+  </body>
+</html>
