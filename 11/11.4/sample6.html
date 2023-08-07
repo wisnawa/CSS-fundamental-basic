@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Radial Gradient Color Stop</title>
+    <style>
+      /* menentukan kapan sebuah warna berhenti dan kapan sebuah warna bergabung dengan warna lainnya. */
+      div {
+        width: 500px;
+        height: 250px;
+        margin: 0 auto;
+        border: 2px solid black;
+        float: left;
+        margin: 20px;
+        font-size: 30px;
+        text-align: center;
+      }
+      .satu {
+        background-image: radial-gradient(
+          closest-corner circle,
+          black,
+          yellow,
+          black
+        );
+      }
+      .dua {
+        background-image: radial-gradient(
+          closest-side circle at 10% 60%,
+          black,
+          yellow,
+          black
+        );
+        color: white;
+      }
+      .tiga {
+        background-image: radial-gradient(
+          farthest-corner circle at 10% 60%,
+          black,
+          yellow,
+          black
+        );
+      }
+      .empat {
+        background-image: radial-gradient(
+          farthest-side circle at 10% 60%,
+          black,
+          yellow,
+          black
+        );
+      }
+    </style>
+  </head>
+  <body>
+    <div class="satu">closest-corner</div>
+    <div class="dua">closest-side</div>
+    <div class="tiga">farthest-corner</div>
+    <div class="empat">farthest-side</div>
+  </body>
+</html>
