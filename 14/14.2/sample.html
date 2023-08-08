@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Transform Rotate</title>
+    <style>
+      /* memutar element dengan sudut tertentu */
+      .container {
+        width: 800px;
+        margin: 50px auto;
+      }
+      .satu,
+      .dua,
+      .tiga,
+      .empat {
+        width: 300px;
+        height: 100px;
+        background-color: #39b54a;
+        float: left;
+        margin: 50px;
+        color: white;
+        font-size: 30px;
+        line-height: 100px;
+        text-align: center;
+      }
+      .dua {
+        transform: rotate(15deg);
+      }
+      .tiga {
+        transform: rotate(-30deg);
+      }
+      .empat {
+        transform: rotate(-90deg);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="satu">Normal</div>
+      <div class="dua">rotate(15deg)</div>
+      <div class="tiga">rotate(-30deg)</div>
+      <div class="empat">rotate(-90deg)</div>
+    </div>
+  </body>
+</html>

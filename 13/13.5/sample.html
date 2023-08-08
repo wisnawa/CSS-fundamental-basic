@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Multipel Box Shadow</title>
+    <style>
+      /* menambahkan 2, 3 atau lebih bayangan ke dalam satu element HTML */
+      .conatainer {
+        width: 1000px;
+        margin: 50px auto;
+      }
+      .satu,
+      .dua,
+      .tiga,
+      .empat {
+        width: 200px;
+        height: 200px;
+        background-color: #39b54a;
+        float: left;
+        margin-left: 50px;
+      }
+      p {
+        color: white;
+        font-weight: bold;
+        text-align: center;
+      }
+      .satu {
+        /* box-shadow: offset-x = 5px offset-y = 5px, offset-x = -5px offset-y = -5px */
+        box-shadow: 5px 5px, -5px -5px;
+      }
+      .dua {
+        /* box-shadow: offset-x = 10px offset-y = 10px color = blue, offset-x = 10px offset-y = 10 color = red */
+        box-shadow: 10px 10px blue, 20px 20px red;
+      }
+      .tiga {
+        /* box-shadow: inset offset-x = 10px offset-y = 10px blur-radius = 10px, inset offset-x = -10px offset-y = -10px blur-radius = 10px */
+        box-shadow: inset 10px 10px 10px, inset -10px -10px 10px;
+      }
+      .empat {
+        box-shadow: inset 7px 7px 3px hsl(100, 100%, 50%),
+          inset -7px -7px 3px hsl(150, 100%, 50%);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="satu">
+        <p>Box 1</p>
+      </div>
+      <div class="dua">
+        <p>Box 2</p>
+      </div>
+      <div class="tiga">
+        <p>Box 3</p>
+      </div>
+      <div class="empat">
+        <p>Box 4</p>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rotate Origin</title>
+    <style>
+      /* untuk mengatur dari titik mana rotasi akan dilakukan. */
+      .container {
+        width: 800px;
+        margin: 50px auto;
+      }
+      .satu,
+      .dua,
+      .tiga,
+      .empat {
+        width: 300px;
+        height: 100px;
+        background-color: #39b54a;
+        float: left;
+        margin: 50px;
+        color: white;
+        font-size: 30px;
+        line-height: 100px;
+        text-align: center;
+      }
+      .dua {
+        transform-origin: left top;
+        transform: rotate(15deg);
+      }
+      .tiga {
+        transform-origin: left bottom;
+        transform: rotate(15deg);
+      }
+      .empat {
+        transform-origin: left bottom;
+        transform: rotate(45deg);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="satu">Normal</div>
+      <div class="dua">left top (15deg)</div>
+      <div class="tiga">left buttom (15deg)</div>
+      <div class="empat">left buttom (45deg)</div>
+    </div>
+  </body>
+</html>
