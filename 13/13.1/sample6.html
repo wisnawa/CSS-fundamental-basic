@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS3 Border Image</title>
+    <style>
+      .container {
+        width: 800px;
+        margin: 0 auto;
+      }
+      .satu,
+      .dua,
+      .tiga {
+        width: 200px;
+        height: 200px;
+        background-color: #39b54a;
+        float: left;
+        margin-left: 50px;
+        /* property border-image-source */
+        border-image-source: url(gambar/border1.png);
+        /* property border-image-width */
+        border-image-width: 30px;
+        /* property border-image-slice */
+        border-image-slice: 33%;
+      }
+      .satu,
+      .dua,
+      .tiga {
+        text-align: center;
+        color: red;
+        line-height: 90px;
+      }
+      .satu {
+        /* property border-image-repeat, nilai defalut */
+        border-image-repeat: stretch;
+      }
+      .dua {
+        /* property border-image-repeat */
+        border-image-repeat: repeat;
+      }
+      .tiga {
+        /* property border-image-repeat */
+        border-image-repeat: round;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="satu">border-image-repeat: stretch</div>
+      <div class="dua">border-image-repeat: repeat</div>
+      <div class="tiga">border-image-repeat: &nbsp;round</div>
+    </div>
+  </body>
+</html>

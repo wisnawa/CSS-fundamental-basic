@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS3 Border Image</title>
+    <style>
+      /* shorthand untuk property border-image, kelima property tersebut bisa disatukan penulisannya ke dalam sebuah property border-image */
+      .container {
+        width: 900px;
+        margin: 0 auto;
+      }
+      .satu,
+      .dua,
+      .tiga {
+        width: 200px;
+        height: 200px;
+        background-color: #39b54a;
+        float: left;
+        margin-left: 50px;
+        margin-top: 40px;
+        margin-right: 18px;
+      }
+      .satu {
+        /* property border-image-source: url(gambar/border1.png) */
+        /* property border-image-slice: 33 fill */
+        /* property border-image-width: 30px */
+        /* property border-image-outset: 30px */
+        /* property border-image-repeat: round */
+        border-image: url(gambar/border1.png) 33 fill / 30px / 30px round;
+      }
+      .dua {
+        /* property border-image-source: url(gambar/border2.png) */
+        /* property border-image-slice: 20 */
+        /* property border-image-width: 20px */
+        /* property border-image-outset: 30px */
+        /* property border-image-repeat: round */
+        border-image: url(gambar/border2.png) 20 / 20px / 30px round;
+      }
+      .tiga {
+        /* property border-image-source: url(gambar/border3.png) */
+        /* property border-image-slice: 30% */
+        /* property border-image-width: 30px */
+        /* property border-image-outset: 0px */
+        /* property border-image-repeat: round */
+        border-image: url(gambar/border3.png) 30% / 30px / 0px round;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="satu">Box 1</div>
+      <div class="dua">Box 2</div>
+      <div class="tiga">Box 3</div>
+    </div>
+  </body>
+</html>
