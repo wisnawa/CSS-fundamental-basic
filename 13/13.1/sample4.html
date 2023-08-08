@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Border Image</title>
+    <style>
+      .container {
+        width: 700px;
+        margin: 0 auto;
+      }
+      .satu {
+        width: 200px;
+        height: 200px;
+        background-color: #39b54a;
+        /* property border-image-source */
+        border-image-source: url(gambar/border2.png);
+        /* property border-image-width */
+        border-image-width: 30px;
+        /* property border-image-slice */
+        border-image-slice: 15%;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="satu"></div>
+    </div>
+  </body>
+</html>

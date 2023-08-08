@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS3 Border Image</title>
+    <style>
+      /* digunakan menjadikan gambar untuk sebagai bingkai border */
+      .container {
+        width: 700px;
+        margin: 0 auto;
+      }
+      .satu {
+        width: 200px;
+        height: 200px;
+        background-color: #39b54a;
+        /* property border-image-source */
+        border-image-source: url(gambar/border1.png);
+        /* property border-image-width */
+        border-image-width: 33px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="satu"></div>
+    </div>
+  </body>
+</html>
