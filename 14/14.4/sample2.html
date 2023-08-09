@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>scale_shorthand</title>
+    <style>
+      .container {
+        width: 800px;
+        margin: 50px auto;
+      }
+      .satu,
+      .dua,
+      .tiga,
+      .empat {
+        width: 300px;
+        height: 100px;
+        background-color: #39b54a;
+        float: left;
+        margin: 50px;
+        color: white;
+        font-size: 30px;
+        line-height: 100px;
+        text-align: center;
+      }
+      .dua {
+        transform: scale(0.75, 2);
+      }
+      .tiga {
+        transform: scale(1.6, 2);
+      }
+      .empat {
+        transform: scale(-1);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="satu">Normal</div>
+      <div class="dua">scale(0.75,2)</div>
+      <div class="tiga">scale(1.6,2)</div>
+      <!-- tampilan tulisan terbalik terlihat pada web browser -->
+      <div class="empat">scale(-1)</div>
+    </div>
+  </body>
+</html>

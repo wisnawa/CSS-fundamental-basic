@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Transform Scale</title>
+    <style>
+      /* efek scale digunakan untuk memperbesar atau memperkecil sebuah element */
+      .container {
+        width: 800px;
+        margin: 50px auto;
+      }
+      .satu,
+      .dua,
+      .tiga,
+      .empat {
+        width: 300px;
+        height: 100px;
+        background-color: #39b54a;
+        float: left;
+        margin: 50px;
+        color: white;
+        font-size: 30px;
+        line-height: 100px;
+        text-align: center;
+      }
+      .dua {
+        transform: scaleX(1.5);
+      }
+      .tiga {
+        transform: scaleY(2.5);
+      }
+      .empat {
+        transform: scaleX(0.5) scaleY(2);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="satu">Normal</div>
+      <div class="dua">scaleX(1.5)</div>
+      <div class="tiga">scaleY(2.5)</div>
+      <div class="empat">scaleX(0.5),scaleY(2)</div>
+    </div>
+  </body>
+</html>

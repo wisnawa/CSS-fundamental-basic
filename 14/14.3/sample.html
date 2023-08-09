@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Transform Translate</title>
+    <style>
+      /* efek translate adalah memindahkan posisi dari satu element */
+      .container {
+        width: 800px;
+        margin: 50px auto;
+      }
+      .satu,
+      .dua,
+      .tiga,
+      .empat {
+        width: 300px;
+        height: 100px;
+        background-color: #39b54a;
+        float: left;
+        margin: 50px;
+        color: white;
+        font-size: 30px;
+        line-height: 100px;
+        text-align: center;
+      }
+      /* .satu {kosong / default} */
+      .dua {
+        transform: translateX(20px) translateY(20px);
+      }
+      .tiga {
+        /* ini sama artinnya seperti diatas menggunakan shorthand */
+        transform: translate(20px 20px);
+      }
+      .empat {
+        transform: translate(-20px -40px);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="satu">Normal</div>
+      <div class="dua">translateX,Y(20px)</div>
+      <div class="tiga">translate(20px,20px)</div>
+      <div class="empat">translate(-20px,-40px)</div>
+    </div>
+  </body>
+</html>
