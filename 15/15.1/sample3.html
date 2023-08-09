@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Property transition-timing-function</title>
+    <style>
+      /* berfungis untuk menentukan bagaimana efek transisi berjalan */
+      .container {
+        width: 110px;
+        margin: 0 auto;
+      }
+      .satu,
+      .dua,
+      .tiga,
+      .empat,
+      .lima {
+        width: 300px;
+        height: 50px;
+        background-color: green;
+        margin: 20px;
+        color: white;
+        font-size: 30px;
+        line-height: 50px;
+        text-align: center;
+        /* property transition */
+        transition-duration: 1s;
+      }
+      /* Property transition-timing-function */
+      .satu {
+        transition-timing-function: linear;
+      }
+      .dua {
+        transition-timing-function: ease;
+      }
+      .tiga {
+        transition-timing-function: ease-in;
+      }
+      .empat {
+        transition-timing-function: ease-out;
+      }
+      .lima {
+        transition-timing-function: ease-in-out;
+      }
+      .satu:hover,
+      .dua:hover,
+      .tiga:hover,
+      .empat:hover,
+      .lima:hover {
+        width: 1000px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="satu">linear</div>
+      <div class="dua">ease</div>
+      <div class="tiga">ease-in</div>
+      <div class="empat">ease-out</div>
+      <div class="lima">ease-in-out</div>
+    </div>
+  </body>
+</html>

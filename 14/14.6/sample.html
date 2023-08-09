@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Transform dengan Metriks</title>
+    <style>
+      /* untuk menghasilkan efek yang lebih kompleks */
+      .container {
+        width: 800px;
+        margin: 50px auto;
+      }
+      .satu,
+      .dua,
+      .tiga,
+      .empat {
+        width: 300px;
+        height: 100px;
+        background-color: #39b54a;
+        float: left;
+        margin: 50px;
+        color: white;
+        font-size: 30px;
+        line-height: 100px;
+        text-align: center;
+      }
+      .dua {
+        transform: matrix(1, 0, 0, -1, 0, 0);
+      }
+      .tiga {
+        transform: matrix(1, 0, 0.268, 1, -10, -20);
+      }
+      .empat {
+        transform: matrix(0.98, -0.17, 0.17, 0.98, 0, 0);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="satu">Normal</div>
+      <div class="dua">matrix 2</div>
+      <div class="tiga">matrix 3</div>
+      <div class="empat">matrik 4</div>
+    </div>
+  </body>
+</html>
