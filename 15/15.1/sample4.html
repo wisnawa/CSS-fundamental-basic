@@ -4,7 +4,53 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Property transition-delay</title>
-    <style></style>
+    <style>
+      /* berfungis untuk membuat jeda waktu sebelum efek transisi berlangsung */
+      .container {
+        width: 1000px;
+        margin: 0 auto;
+      }
+      .satu,
+      .dua,
+      .tiga,
+      .empat {
+        width: 300px;
+        height: 90px;
+        background-color: green;
+        margin: 20px;
+        color: white;
+        font-size: 30px;
+        line-height: 50px;
+        text-align: center;
+        transition-duration: 1s;
+      }
+      .satu {
+        transition-delay: 1s;
+      }
+      .dua {
+        transition-delay: 0.5s;
+      }
+      .tiga {
+        transition-delay: 100ms;
+      }
+      .empat {
+        transition-delay: 3000ms;
+      }
+      .satu:hover,
+      .dua:hover,
+      .tiga:hover,
+      .empat:hover {
+        width: 800px;
+        background-color: red;
+      }
+    </style>
   </head>
-  <body></body>
+  <body>
+    <div class="container">
+      <div class="satu">transition-delay: 1s</div>
+      <div class="dua">transition-delay: 0.5s</div>
+      <div class="tiga">transition-delay: 100ms</div>
+      <div class="empat">transition-delay: 3000ms</div>
+    </div>
+  </body>
 </html>
