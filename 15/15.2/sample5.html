@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>animation play state</title>
+    <style>
+      .container {
+        width: 1000px;
+        height: 500px;
+        margin: 0 auto;
+        border: 1px solid black;
+      }
+      .satu {
+        width: 100px;
+        height: 100px;
+        background-color: green;
+        position: relative;
+      }
+      /* meberitahukan kepada web browser bahwa kode ini merupakan kumpulan keyframe untuk membuat animasi */
+      @keyframes pindah2 {
+        0% {
+          top: 0px;
+          left: 0px;
+        }
+        25% {
+          top: 00px;
+          left: 900px;
+        }
+        50% {
+          top: 400px;
+          left: 900px;
+        }
+        75% {
+          top: 400px;
+          left: 0px;
+        }
+        100% {
+          top: 0px;
+          left: 0px;
+        }
+      }
+      .satu {
+        /* property animation-name, manghubungkan keyframe dengan CSS selector */
+        animation-name: pindah2;
+        /* efek animasi bisa diulang beberapa kali, nilai yang diisi berupa angka yang menentukan berapa kali perulangan animasi terjadi. */
+        animation-duration: 10s;
+        /* efek animasi bisa diulang beberapa kali, nilai yang diisi berupa angka yang menentukan berapa kali perulangan animasi terjadi. */
+        animation-iteration-count: infinite;
+      }
+      .satu:hover {
+        /* fungsi untuk mengontrol efek animasi */
+        animation-play-state: paused;
+        background-color: red;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="satu"></div>
+    </div>
+  </body>
+</html>

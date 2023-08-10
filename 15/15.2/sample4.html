@@ -16,6 +16,7 @@
         background-color: green;
         margin: 20px;
       }
+      /* meberitahukan kepada web browser bahwa kode ini merupakan kumpulan keyframe untuk membuat animasi */
       @keyframes lebar-warna {
         0% {
           width: 500px;
@@ -31,17 +32,29 @@
         }
       }
       .satu:hover {
+        /* property animation-name, manghubungkan keyframe dengan CSS selector */
         animation-name: lebar-warna;
+        /* efek animasi bisa diulang beberapa kali, nilai yang diisi berupa angka yang menentukan berapa kali perulangan animasi terjadi. */
         animation-duration: 3s;
+        /* memberikan jeda sebelum efek animasi terjadi */
         animation-delay: 2s;
       }
       .dua:hover {
+        /* property animation-name, manghubungkan keyframe dengan CSS selector */
         animation-name: lebar-warna;
+        /* efek animasi bisa diulang beberapa kali, nilai yang diisi berupa angka yang menentukan berapa kali perulangan animasi terjadi. */
         animation-duration: 3s;
+        /* memberikan jeda sebelum efek animasi terjadi */
         animation-delay: 2s;
+        /* digunakan untuk menentukan bagaimana 'style' element sebelum dan sesudah animasi */
         animation-fill-mode: both;
       }
     </style>
   </head>
-  <body></body>
+  <body>
+    <div class="container">
+      <div class="satu"></div>
+      <div class="dua"></div>
+    </div>
+  </body>
 </html>
