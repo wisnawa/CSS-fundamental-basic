@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Sprites</title>
+    <style>
+      .container {
+        width: 720px;
+        margin: 0 auto;
+      }
+      .container div {
+        height: 65px;
+        width: 80px;
+        float: left;
+      }
+      .twitter {
+        background: url(../17.1/gambar/social.png) 0 0;
+      }
+      .twitter:hover {
+        background: url(../17.1/gambar/social.png) 0 -64px;
+      }
+      .fb {
+        background: url(../17.1/gambar/social.png) -70px 0;
+      }
+      .fb:hover {
+        background: url(../17.1/gambar/social.png) -70px -64px;
+      }
+      .youtube {
+        background: url(../17.1/gambar/social.png) -145px 0;
+      }
+      .youtube:hover {
+        background: url(../17.1/gambar/social.png) -145px 064px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="twitter"></div>
+      <div class="fb"></div>
+      <div class="youtube"></div>
+    </div>
+  </body>
+</html>
