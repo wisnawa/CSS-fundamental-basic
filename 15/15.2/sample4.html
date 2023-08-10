@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Animation fill mode</title>
+    <style>
+      .container {
+        width: 1200px;
+        margin: 0 auto;
+      }
+      .satu,
+      .dua {
+        width: 400px;
+        height: 50px;
+        background-color: green;
+        margin: 20px;
+      }
+      @keyframes lebar-warna {
+        0% {
+          width: 500px;
+          background-color: red;
+        }
+        50% {
+          width: 200px;
+          background-color: black;
+        }
+        100% {
+          width: 900px;
+          background-color: pink;
+        }
+      }
+      .satu:hover {
+        animation-name: lebar-warna;
+        animation-duration: 3s;
+        animation-delay: 2s;
+      }
+      .dua:hover {
+        animation-name: lebar-warna;
+        animation-duration: 3s;
+        animation-delay: 2s;
+        animation-fill-mode: both;
+      }
+    </style>
+  </head>
+  <body></body>
+</html>

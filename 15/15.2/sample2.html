@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Animation keyframe</title>
+    <style>
+      /* sample2 */
+      .container {
+        width: 300px;
+        margin: 0 auto;
+      }
+      .satu,
+      .dua {
+        width: 300px;
+        height: 70px;
+        background-color: green;
+        margin: 30px;
+      }
+      /* meberitahukan kepada web browser bahwa kode ini merupakan kumpulan keyframe untuk membuat animasi */
+      @keyframes lebar {
+        0% {
+          width: 300px;
+        }
+        40% {
+          width: 100px;
+        }
+        80% {
+          width: 1000px;
+        }
+      }
+      .satu:hover {
+        /* property animation-name, manghubungkan keyframe dengan CSS selector */
+        animation-name: lebar;
+        /* property animation-duration, menenutkan berapa lama sebuah animasi berjalan */
+        animation-duration: 5s;
+        /* efek animasi bisa diulang beberapa kali, nilai yang diisi berupa angka yang menentukan berapa kali perulangan animasi terjadi. */
+        animation-iteration-count: 5;
+      }
+      /* meberitahukan kepada web browser bahwa kode ini merupakan kumpulan keyframe untuk membuat animasi */
+      @keyframes warna {
+        0% {
+          background-color: red;
+        }
+        30% {
+          background-color: blue;
+        }
+        60% {
+          background-color: yellow;
+        }
+        90% {
+          background-color: black;
+        }
+      }
+      .dua:hover {
+        /* property animation-name, manghubungkan keyframe dengan CSS selector */
+        animation-name: warna;
+        /* property animation-duration, menenutkan berapa lama sebuah animasi berjalan */
+        animation-duration: 5s;
+        /* efek animasi bisa diulang beberapa kali, nilai yang diisi berupa angka yang menentukan berapa kali perulangan animasi terjadi. */
+        animation-iteration-count: 5;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="satu"></div>
+      <div class="dua"></div>
+    </div>
+  </body>
+</html>

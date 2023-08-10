@@ -4,7 +4,52 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=`, initial-scale=1.0" />
     <title>Transition multiple</title>
-    <!-- lanjut ke halaman 449 -->
+    <style>
+      .container {
+        width: 1100px;
+        margin: 0 auto;
+      }
+      .satu,
+      .dua,
+      .tiga,
+      .empat {
+        width: 300px;
+        height: 50px;
+        background-color: green;
+        margin: 20px;
+        color: white;
+        font-size: 30px;
+        line-height: 50px;
+        text-align: center;
+      }
+      .satu:hover,
+      .dua:hover,
+      .tiga:hover,
+      .empat:hover {
+        width: 1000px;
+        background-color: red;
+        color: yellow;
+      }
+      .satu {
+        transition: all 2s ease-out 250ms;
+      }
+      .dua {
+        transition: width 1s, background-color 10s;
+      }
+      .tiga {
+        transition: width 1s, background-color 5s, color 10s;
+      }
+      .empat {
+        transition: width 100ms 1s 3s, color 100s 5s;
+      }
+    </style>
   </head>
-  <body></body>
+  <body>
+    <div class="container">
+      <div class="satu">Box 1</div>
+      <div class="dua">Box 2</div>
+      <div class="tiga">Box 3</div>
+      <div class="empat">Box 4</div>
+    </div>
+  </body>
 </html>

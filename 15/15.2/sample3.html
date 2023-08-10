@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>animation timing dan delay count iteratinon</title>
+    <style>
+      .container {
+        width: 1200px;
+        margin: 0 auto;
+      }
+      .satu,
+      .dua,
+      .tiga,
+      .empat,
+      .lima {
+        width: 400px;
+        height: 50px;
+        background-color: green;
+        margin: 20px;
+        color: white;
+        font-size: 20px;
+        line-height: 50px;
+      }
+      /* meberitahukan kepada web browser bahwa kode ini merupakan kumpulan keyframe untuk membuat animasi */
+      @keyframes lebar-warna {
+        25% {
+          width: 500px;
+          background-color: red;
+        }
+        50% {
+          width: 200px;
+          background-color: black;
+        }
+        100% {
+          width: 900px;
+          background-color: pink;
+        }
+      }
+      .satu:hover,
+      .dua:hover,
+      .tiga:hover,
+      .empat:hover,
+      .lima:hover {
+        /* property animation-name, manghubungkan keyframe dengan CSS selector */
+        animation-name: lebar-warna;
+        /* efek animasi bisa diulang beberapa kali, nilai yang diisi berupa angka yang menentukan berapa kali perulangan animasi terjadi. */
+        animation-duration: 5s;
+      }
+      .satu {
+        /* fungsi untuk mengatur bagaimana proses animasi berlangsung */
+        animation-timing-function: linear;
+      }
+      .dua {
+        /* fungsi untuk mengatur bagaimana proses animasi berlangsung */
+        animation-timing-function: ease;
+        /* memberikan jeda sebelum efek animasi terjadi */
+        animation-delay: 2s;
+      }
+      .tiga {
+        /* fungsi untuk mengatur bagaimana proses animasi berlangsung */
+        animation-timing-function: ease-in;
+        /* memberikan jeda sebelum efek animasi terjadi */
+        animation-delay: 2s;
+        /* efek animasi bisa diulang beberapa kali, nilai yang diisi berupa angka yang menentukan berapa kali perulangan animasi terjadi. */
+        animation-iteration-count: 3;
+      }
+      .empat {
+        /* fungsi untuk mengatur bagaimana proses animasi berlangsung */
+        animation-timing-function: ease-out;
+        /* memberikan jeda sebelum efek animasi terjadi */
+        animation-delay: 2s;
+        /* efek animasi bisa diulang beberapa kali, nilai yang diisi berupa angka yang menentukan berapa kali perulangan animasi terjadi. */
+        animation-iteration-count: 3;
+        /* mengontrol efek dari gerak animasi apakah dari awal ke akhir atau dari akhir ke awal, kemudia selesai */
+        animation-direction: normal;
+      }
+      .lima {
+        /* fungsi untuk mengatur bagaimana proses animasi berlangsung */
+        animation-timing-function: ease-in-out;
+        /* memberikan jeda sebelum efek animasi terjadi */
+        animation-delay: 2s;
+        /* efek animasi bisa diulang beberapa kali, nilai yang diisi berupa angka yang menentukan berapa kali perulangan animasi terjadi. */
+        animation-iteration-count: 3;
+        /* mengontrol efek dari gerak animasi apakah dari awal ke akhir atau dari akhir ke awal, kemudia selesai */
+        animation-direction: alternate;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="satu">linear</div>
+      <div class="dua">ease, delay 2s</div>
+      <div class="tiga">ease-in, delay 2s, count 3</div>
+      <div class="empat">ease-out, delay 2s, count 3, normal</div>
+      <div class="lima">ease-in-out, delay 2s, count 3, alternate</div>
+    </div>
+  </body>
+</html>
